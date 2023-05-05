@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,800;1,500;1,800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Notifications page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="notification">
+        <div class="header">
+          <div class="headerText strongText">
+            <h2>Notifications</h2>
+            <span class="notificationsCount" id="notificationsCount">3</span>
+          </div>
+          <button>Mark all as read</button>
+        </div>
+        <div class="notifications unread">
+          <img src="assets/images/avatar-mark-webber.webp" alt="Mark Weber" />
+          <span><strong class="strongText">Mark Webber</strong> reacted to your recent post <strong> My first
+          tournament today!</strong> <span class="ball">•</span>  <br>1m ago</br>
+        </div>
 
-  Notifications 3
+        <div class="notifications unread"><img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray" />
+          <span><strong class="strongText">Angela Gray</strong> followed you <span class="ball">•</span>  <br>5m ago</br></div>
 
-  Mark all as read
+        <div class="notifications unread"><img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson" />
+          <span><strong class="strongText">Jacob Thompson</strong> has joined your group <strong style="color: hsl(219, 85%, 26%);" > Chess Club</strong><span class="ball">•</span>  <br>1m ago</br></span></div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="notifications read"><img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+            <span><strong class="strongText">Rizky Hasanuddin</strong> sent you a private message<br>5 days ago</br></span>
+          </div>
+          <span class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+          </span>
+          
+          <div class="notifications read floatRight"><span class="floatRightText"><img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+            <span><strong class="strongText">Kimberly Smith</strong><br>1 week ago</br></span> commented on your picture </span>
+            <img src="assets/images/image-chess.webp" alt="chess" style="float: right;">
+          </div>
+          <div class="notifications read"><img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+          <span><strong class="strongText">Nathan Peterson </strong>  reacted to your recent post <strong> 5 end-game strategies to increase your win rate</strong><br>2 weeks ago</br>
+          </div>
+          <div class="notifications read"><img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+            <span><strong class="strongText">Anna Kim</strong> left the group <strong style="color: hsl(219, 85%, 26%);" > Chess Club</strong>  <br>2 weeks ago</br></span>
+          </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
 </html>
